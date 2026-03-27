@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard {
+    width: 1000px;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns:
+        200px 1fr 300px;
+    grid-template-rows:
+        80px 1fr 1fr 60px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main widget1"
+        "sidebar main widget2"
+        "footer footer footer";
+    gap: 15px;
+}
+
+.header {
+    grid-area: header;
+    background: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+    background: #FFC107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget1 {
+    grid-area: widget1;
+    background: #FF5722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget2 {
+    grid-area: widget2;
+    background: #b0275c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: rgba(255, 255, 255, 0.219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
